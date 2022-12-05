@@ -3,7 +3,7 @@ body {
 }
 
 img {
-	
+
 	width: 50%;
 	border: 5px solid green;
 	border-radius: 50%;
@@ -19,16 +19,17 @@ img {
 	cursor: progress;
 }
 @keyframes resizeLeft{
-	0% {width:90%;}
+	0% {width:100%;}
 	50% {width:50%;}
-	100% {width:90%;}
+	100% {width:100%;}
 }
 @keyframes resizeRight{
 	0% {width:50%;}
-	50% {width:90%;}
+	50% {width:100%;}
 	100% {width:50%;}
 }
 .row {
+	height: 50vw;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -38,10 +39,6 @@ img {
 	
 	flex: 50%;
 }
-#imgur {
-	margin: 0;
-}
-
 
 video {
 	width: 30%;
@@ -61,5 +58,7 @@ footer img {
 	box-shadow: none;
 }
 footer p {
+	color:black;
+	font-family:'Courier New';
 	margin: 0;
 }

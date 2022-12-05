@@ -1,0 +1,43 @@
+body {
+    background-image: url("../img/grass.jfif");
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: center;
+	margin: 0;
+}
+
+header {
+    height: 35vw;
+    width: 100vw;
+    background-image: url("../img/dog.jfif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 10%;
+}
+h1 {
+    color:black;
+	font-family:'Tahoma';
+    font-style: italic;
+    font-size: 5vw;
+    padding-top: 3vh;
+    text-align: center;
+    margin: 0;
+}
+
+footer {
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+	padding: 15px 5px 5px 5px;
+	text-align: center;
+	background-color: rgb(111, 170, 43);
+}
+footer img {
+	border: none;
+	box-shadow: none;
+}
+footer p {
+	color:white;
+	font-family:'Courier New';
+	margin: 0;
+}
