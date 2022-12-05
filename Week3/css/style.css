@@ -3,11 +3,45 @@ body {
 }
 
 img {
-	width: 25%;
+	
+	width: 50%;
 	border: 5px solid green;
 	border-radius: 50%;
 	box-shadow: 5px 5px 4px darkgreen;
 }
+#imageLeft {
+	
+	animation: resizeLeft 5s infinite;
+	cursor: wait;
+}
+#imageRight {
+	animation: resizeRight 5s infinite;
+	cursor: progress;
+}
+@keyframes resizeLeft{
+	0% {width:90%;}
+	50% {width:50%;}
+	100% {width:90%;}
+}
+@keyframes resizeRight{
+	0% {width:50%;}
+	50% {width:90%;}
+	100% {width:50%;}
+}
+.row {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+.column {
+	
+	flex: 50%;
+}
+#imgur {
+	margin: 0;
+}
+
 
 video {
 	width: 30%;
