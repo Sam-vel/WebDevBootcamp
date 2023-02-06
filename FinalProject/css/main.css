@@ -1,0 +1,63 @@
+body {
+    overflow: hidden;
+    background-color: cadetblue;
+    margin: 0;
+}
+
+#introName {
+    position: fixed;
+    z-index: 2;
+    opacity: 0;
+    top: 120vh;
+    text-align: center;
+    font-family: 'Verdana', 'Helvetica', sans-serif;
+    font-size: min(18vw, 150px);
+    font-weight: bold;
+    line-height: 90%;
+    color: aliceblue;
+
+    animation: fadeDown 1.5s 0.75s forwards ease;
+}
+#jobTitle {
+    position: absolute;
+    z-index: 2;
+    opacity: 0;
+    top: 120vh;
+    text-align: center;
+    font-family: 'Verdana', 'Helvetica', sans-serif;
+    font-size: min(6vw, 125px);
+    font-style: italic;
+    color: aliceblue;
+
+    animation: fadeUp 1.75s 0.75s forwards ease;
+}
+#headerContent {
+    position: absolute;
+    justify-content: center;
+}
+#spacer {
+    position: fixed;
+    top: 50vh;
+    background-color: darkcyan;
+    border-radius: 5px;
+    height: 7px;
+    width: 0;
+
+    animation: topBar 1.5s 1.5s forwards ease;
+}
+
+@keyframes fadeUp {
+    0%{top: 120vh;}
+    25%{opacity: 0;}
+    100%{top: 22vh; opacity: 1;}
+}
+@keyframes fadeDown {
+    0%{bottom: 120vh;}
+    25%{opacity: 0;}
+    100%{bottom: 51vh; opacity: 1;}
+}
+@keyframes topBar {
+    0%{width: 0; top: 50vh; opacity: 0;}
+    75%{top: 47vh; width: 75vw; border-radius: 5px; opacity: 1;}
+    100%{top: 47vh; width: 75vw; border-radius: 5px;}
+}
