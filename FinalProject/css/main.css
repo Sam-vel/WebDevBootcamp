@@ -5,10 +5,10 @@ body {
 }
 
 #introName {
-    position: fixed;
+    position: absolute;
     z-index: 2;
     opacity: 0;
-    top: 120vh;
+    bottom: 140vh;
     text-align: center;
     font-family: 'Verdana', 'Helvetica', sans-serif;
     font-size: min(18vw, 150px);
@@ -32,12 +32,11 @@ body {
     animation: fadeUp 1.75s 0.75s forwards ease;
 }
 #headerContent {
-    position: absolute;
-    justify-content: center;
+    
 }
 #spacer {
     position: fixed;
-    top: 50vh;
+    top: 60vh;
     background-color: darkcyan;
     border-radius: 5px;
     height: 7px;
@@ -48,16 +47,16 @@ body {
 
 @keyframes fadeUp {
     0%{top: 120vh;}
-    25%{opacity: 0;}
-    100%{top: 22vh; opacity: 1;}
+    25%{filter: blur(20px); opacity: 0;}
+    100%{filter: blur(0px); top: 22vh; opacity: 1;}
 }
 @keyframes fadeDown {
     0%{bottom: 120vh;}
-    25%{opacity: 0;}
-    100%{bottom: 51vh; opacity: 1;}
+    25%{filter: blur(20px); opacity: 0;}
+    100%{filter: blur(0px); bottom: 51vh; opacity: 1;}
 }
 @keyframes topBar {
     0%{width: 0; top: 50vh; opacity: 0;}
-    75%{top: 47vh; width: 75vw; border-radius: 5px; opacity: 1;}
-    100%{top: 47vh; width: 75vw; border-radius: 5px;}
+    75%{top: 55vh; width: 75vw; border-radius: 5px; opacity: 1;}
+    100%{top: 55vh; width: 75vw; border-radius: 5px;}
 }
